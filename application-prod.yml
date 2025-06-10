@@ -3,10 +3,10 @@ spring:
       name: ConfigServer-Prod
    
 eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    preferIpAddress: true
-    serviceUrl:
-      defaultZone: http://localhost:8781/eureka 
-
+   client:
+      register-with-eureka: true
+      fetch-registry: true
+      service-url:
+         defaultZone: http://localhost:8781/eureka
+   instance:
+      prefer-ip-address: true
